@@ -20,7 +20,7 @@ public class TC_LoginTest_001 extends BaseClass {
 		validateTitle(title);
 		log.info("Login sucessfully");
 		log.assertLog(true, "Login Successfully");
-		System.out.println();
+		System.out.println("Test");
 
 	}
 
