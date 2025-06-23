@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="InItBanking" duration-ms="37366" started-at="2025-06-23T23:00:55 IST" finished-at="2025-06-23T23:01:32 IST">
+    <groups>
+      <group name="Sanity">
+        <method signature="TC_LoginTest_001.loginTest()[pri:0, instance:com.initBanking.testCases.TC_LoginTest_001@7d70d1b1]" name="loginTest" class="com.initBanking.testCases.TC_LoginTest_001"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC_LoginTest_001.loginTest()[pri:0, instance:com.initBanking.testCases.TC_LoginTest_001@7d70d1b1]" name="loginTest" class="com.initBanking.testCases.TC_LoginTest_001"/>
+        <method signature="TC_Logout_02.logoutTest()[pri:0, instance:com.initBanking.testCases.TC_Logout_02@2a742aa2]" name="logoutTest" class="com.initBanking.testCases.TC_Logout_02"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Banking Web Test" duration-ms="37366" started-at="2025-06-23T23:00:55 IST" finished-at="2025-06-23T23:01:32 IST">
+      <class name="com.initBanking.testCases.TC_Logout_02">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.initBanking.testCases.TC_Logout_02@2a742aa2]" name="setup" is-config="true" duration-ms="7835" started-at="2025-06-23T23:01:06 IST" finished-at="2025-06-23T23:01:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:com.initBanking.testCases.TC_Logout_02@2a742aa2]" name="logoutTest" duration-ms="17273" started-at="2025-06-23T23:01:14 IST" finished-at="2025-06-23T23:01:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.initBanking.testCases.TC_Logout_02@2a742aa2]" name="afterMethod" is-config="true" duration-ms="1" started-at="2025-06-23T23:01:31 IST" finished-at="2025-06-23T23:01:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.initBanking.testCases.TC_Logout_02@2a742aa2]" name="tearDown" is-config="true" duration-ms="645" started-at="2025-06-23T23:01:31 IST" finished-at="2025-06-23T23:01:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.initBanking.testCases.TC_Logout_02 -->
+      <class name="com.initBanking.testCases.TC_LoginTest_001">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.initBanking.testCases.TC_LoginTest_001@7d70d1b1]" name="setup" is-config="true" duration-ms="8189" started-at="2025-06-23T23:00:55 IST" finished-at="2025-06-23T23:01:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.initBanking.testCases.TC_LoginTest_001@7d70d1b1]" name="loginTest" duration-ms="2547" started-at="2025-06-23T23:01:03 IST" finished-at="2025-06-23T23:01:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.initBanking.testCases.TC_LoginTest_001@7d70d1b1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2025-06-23T23:01:06 IST" finished-at="2025-06-23T23:01:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.initBanking.testCases.TC_LoginTest_001@7d70d1b1]" name="tearDown" is-config="true" duration-ms="650" started-at="2025-06-23T23:01:06 IST" finished-at="2025-06-23T23:01:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.initBanking.testCases.TC_LoginTest_001 -->
+    </test> <!-- Banking Web Test -->
+  </suite> <!-- InItBanking -->
+</testng-results>

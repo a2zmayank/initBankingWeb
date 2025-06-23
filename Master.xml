@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="InItBanking">
+
+	
+	<listeners>
+		<listener class-name="com.initBanking.utilities.TestListnerReport" />
+	</listeners>
+
+	<test name="Banking Web Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="os" value="Window System"></parameter>
+		<classes>
+			<class name="com.initBanking.testCases.TC_LoginTest_001" />
+		<class name="com.initBanking.testCases.TC_Logout_02" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
