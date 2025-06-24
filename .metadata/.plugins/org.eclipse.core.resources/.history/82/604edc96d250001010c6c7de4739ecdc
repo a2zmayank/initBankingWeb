@@ -1,0 +1,44 @@
+package api.testcases;
+
+import org.testng.annotations.*;
+import api.endpoints.petEndPoints;
+import api.payload.PetCategaryPojo;
+import api.payload.PetPojoMain;
+import api.payload.PetTagsPojo;
+import io.restassured.response.Response;
+
+public class PetTest {
+	PetPojoMain PojoMainDataProvider;
+	PetCategaryPojo petCategory;
+	PetTagsPojo petTag;
+
+	@BeforeClass
+	public void payloadData() {
+		// Pojo Class Object for Pet
+		PojoMainDataProvider = new PetPojoMain();
+		petCategory = new PetCategaryPojo();
+		petTag = new PetTagsPojo();
+
+		// Value setting via Pojo
+		PojoMainDataProvider.setId(1);
+		petCategory.setCategoryID(1);
+		petCategory.setCategoryName("Doggy");
+		PojoMainDataProvider.setCategory(petCategory);
+		PojoMainDataProvider.setName("Tommy");
+
+		String photos[] = { "URL1", "URL2" };
+		PojoMainDataProvider.setPhotoUrls(photos);
+
+		petTag.setTagId(1);
+		petTag.setTagName("Taag1");
+		PojoMainDataProvider.setTagging(petTag);
+	}
+
+	@Test
+	public void CreatePet() {
+		Response response = petEndPoints.CreatePet(PojoMainDataProvider);
+		response.then().log().all();
+		System.out.println(response.getStatusCode());
+	}
+
+}

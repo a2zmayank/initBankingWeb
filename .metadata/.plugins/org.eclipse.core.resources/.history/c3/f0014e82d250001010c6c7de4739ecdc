@@ -1,0 +1,36 @@
+package api.endpoints;
+
+import api.payload.PetPojoMain;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+public class petEndPoints {
+	public static Response CreatePet(PetPojoMain payload) {
+		Response response = RestAssured.given().accept(ContentType.JSON).contentType(ContentType.JSON).body(payload)
+				.when().post(Routes.addPost_pet);
+		return response;
+
+	}
+
+	public static Response GetPet(int petId) {
+		Response response = RestAssured.given().accept(ContentType.JSON)
+
+				.when().post(Routes.get_pet);
+		return response;
+	}
+	
+	public static Response UpdatePet(PetPojoMain payload) {
+		Response response = RestAssured.given().accept(ContentType.JSON).contentType(ContentType.JSON).body(payload)
+				.when().post(Routes.updatePut_pet);
+		return response;
+	}
+	
+	public static Response DeletePet(int petId) {
+		Response response = RestAssured.given().accept(ContentType.JSON)
+
+				.when().post(Routes.delete_pet);
+		return response;
+	}
+
+}
