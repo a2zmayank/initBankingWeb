@@ -1,5 +1,7 @@
 package com.initBanking.pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -34,9 +36,10 @@ public class LogoutPage {
 		System.out.println("Pre Logout Element");
 		Thread.sleep(3000);
 		Actions ac= new Actions(driver);
-		WebDriverWait wait= new WebDriverWait(driver,10);
+		//WebDriverWait wait= new WebDriverWait(driver,10);
+		//wait.until(ExpectedConditions.visibilityOf(clickLogout));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(clickLogout));
-	
 		ac.moveToElement(clickLogout).click().build().perform();;
 		System.out.println("Logout");
 		Thread.sleep(5000);
