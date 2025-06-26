@@ -12,8 +12,7 @@
 		<parameter name="os" value="Window System"></parameter>
 		<classes>
 			<class name="com.initBanking.testCases.TC_LoginTest_001" />
-		<class name="com.initBanking.testCases.TC_Logout_02" />
-
+		    <class name="com.initBanking.testCases.TC_Logout_02" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
