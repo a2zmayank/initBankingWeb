@@ -36,10 +36,9 @@ public class LogoutPage {
 		System.out.println("Pre Logout Element");
 		Thread.sleep(3000);
 		Actions ac= new Actions(driver);
-		//WebDriverWait wait= new WebDriverWait(driver,10);
-		//wait.until(ExpectedConditions.visibilityOf(clickLogout));
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebDriverWait wait= new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.visibilityOf(clickLogout));
+		
 		ac.moveToElement(clickLogout).click().build().perform();;
 		System.out.println("Logout");
 		Thread.sleep(5000);
